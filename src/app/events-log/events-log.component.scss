@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    max-height: 300px;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    overflow: {
+        x: hidden;
+        y: auto;
+    };
+}

@@ -1,0 +1,28 @@
+:host {
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.left-side, .right-side {
+    flex: 0 1 50%;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.left-side {
+    border-color: blue;
+}
+
+.right-side {
+    border-color: red;
+}
+
+.separator {
+    width: 1rem;
+}
