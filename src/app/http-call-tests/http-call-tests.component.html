@@ -1,0 +1,40 @@
+<div class="wrapper">
+    <ng-container *ngIf="mode === 'content'">
+        <left-content class="left-side">
+            <http-call class="child"></http-call>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'none'"
+            ></http-call-push>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'markForCheck'"
+            ></http-call-push>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'detectChanges'"
+            ></http-call-push>
+        </left-content>
+        <div class="separator"></div>
+        <right-content class="right-side">
+            <http-call class="child"></http-call>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'none'"
+            ></http-call-push>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'markForCheck'"
+            ></http-call-push>
+            <http-call-push
+                class="child"
+                [refreshBehavior]="'detectChanges'"
+            ></http-call-push>
+        </right-content>
+    </ng-container>
+    <ng-container *ngIf="mode === 'view'">
+        <left-view class="left-side"></left-view>
+        <div class="separator"></div>
+        <right-view class="right-side"></right-view>
+    </ng-container>
+</div>

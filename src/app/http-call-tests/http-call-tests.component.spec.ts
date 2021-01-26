@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OneComponent } from './one.component';
+import { HttpCallTestsComponent } from './http-call-tests.component';
 
-describe('OneComponent', () => {
-  let component: OneComponent;
-  let fixture: ComponentFixture<OneComponent>;
+describe('HttpCallTestsComponent', () => {
+  let component: HttpCallTestsComponent;
+  let fixture: ComponentFixture<HttpCallTestsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OneComponent ]
+      declarations: [ HttpCallTestsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OneComponent);
+    fixture = TestBed.createComponent(HttpCallTestsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

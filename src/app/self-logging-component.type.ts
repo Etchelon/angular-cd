@@ -21,10 +21,10 @@ export abstract class SelfLoggingComponent
         AfterContentChecked,
         DoCheck,
         OnDestroy {
-    readonly logs: string[];
+    readonly logs: string[] = [];
 
     constructor() {
-        this.logs = [`${this.getComponentName()} - Constructed.`];
+        this.log("Constructed.");
     }
 
     protected getComponentName(): string {

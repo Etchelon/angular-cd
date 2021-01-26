@@ -1,5 +1,16 @@
-<div class="wrapper">
-    <left class="left-side"></left>
-    <div class="separator"></div>
-    <right class="right-side"></right>
+<div class="header">
+    <h3>Change Detection</h3>
+    <div class="routes">
+        <a class="route"
+            [routerLink]="['/http-call']" [queryParams]="{ mode: 'content' }"
+            routerLinkActive="active"
+            >Http Call - Ng Content</a
+        >
+        <a class="route"
+            [routerLink]="['/http-call']" [queryParams]="{ mode: 'view' }"
+            routerLinkActive="active"
+            >Http Call - View Children</a
+        >
+    </div>
 </div>
+<router-outlet></router-outlet>

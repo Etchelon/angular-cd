@@ -2,27 +2,21 @@
     display: block;
 }
 
-.wrapper {
+.header {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
+    align-items: center;
 
-.left-side, .right-side {
-    flex: 0 1 50%;
-    padding: 1rem;
-    border: 1px solid;
-    border-radius: 10px;
-}
+    .routes {
+        margin-left: 1rem;
 
-.left-side {
-    border-color: blue;
-}
+        .route {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
 
-.right-side {
-    border-color: red;
-}
-
-.separator {
-    width: 1rem;
+            &.active {
+                color: "red";
+            }
+        }
+    }
 }

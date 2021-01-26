@@ -1,0 +1,15 @@
+<p>Left side - View Children - Default CD</p>
+<events-log class="child" [logs]="logs"></events-log>
+<http-call class="child"></http-call>
+<http-call-push
+    class="child"
+    [refreshBehavior]="'none'"
+></http-call-push>
+<http-call-push
+    class="child"
+    [refreshBehavior]="'markForCheck'"
+></http-call-push>
+<http-call-push
+    class="child"
+    [refreshBehavior]="'detectChanges'"
+></http-call-push>
