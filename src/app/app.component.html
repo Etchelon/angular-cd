@@ -1,16 +1,36 @@
 <div class="header">
     <h3>Change Detection</h3>
     <div class="routes">
-        <a class="route"
-            [routerLink]="['/http-call']" [queryParams]="{ mode: 'content' }"
+        <div
+            class="route"
+            [routerLink]="['/change-subproperty']"
             routerLinkActive="active"
-            >Http Call - Ng Content</a
         >
-        <a class="route"
-            [routerLink]="['/http-call']" [queryParams]="{ mode: 'view' }"
+            Change subproperty
+        </div>
+        <div
+            class="route"
+            [routerLink]="['/on-push-parent']"
             routerLinkActive="active"
-            >Http Call - View Children</a
         >
+            On Push blocks default children
+        </div>
+        <div
+            class="route"
+            [routerLink]="['/http-call']"
+            [queryParams]="{ mode: 'content' }"
+            routerLinkActive="active"
+        >
+            Http Call - Ng Content
+        </div>
+        <div
+            class="route"
+            [routerLink]="['/http-call']"
+            [queryParams]="{ mode: 'view' }"
+            routerLinkActive="active"
+        >
+            Http Call - View Children
+        </div>
     </div>
 </div>
 <router-outlet></router-outlet>

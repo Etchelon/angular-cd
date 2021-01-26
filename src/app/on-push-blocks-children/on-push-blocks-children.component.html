@@ -1,0 +1,3 @@
+<p>This component has CD OnPush and its child, with default CD, does not update as it would normally, because the parent with OnPush is not checked unless explicitly marked dirty. Clicking the button automatically marks the whole branch as dirty.</p>
+<http-call></http-call>
+<button type="button" (click)="noop()">Click me to trigger CD</button>

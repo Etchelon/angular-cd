@@ -12,6 +12,10 @@ import { HttpCallTestsComponent } from './http-call-tests/http-call-tests.compon
 import { AppRoutingModule } from "./app-routing.module";
 import { LeftViewComponent } from './left-view/left-view.component';
 import { RightViewComponent } from './right-view/right-view.component';
+import { OnPushBlocksChildrenComponent } from './on-push-blocks-children/on-push-blocks-children.component';
+import { ChangeSubpropertyComponent } from './change-subproperty/change-subproperty.component';
+import { ObjectInputComponent } from './change-subproperty/object-input/object-input.component';
+import { ObjectInputPushComponent } from './change-subproperty/object-input-push/object-input-push.component';
 
 @NgModule({
     imports: [BrowserModule, HttpClientModule, AppRoutingModule],
@@ -26,6 +30,10 @@ import { RightViewComponent } from './right-view/right-view.component';
         HttpCallTestsComponent,
         LeftViewComponent,
         RightViewComponent,
+        OnPushBlocksChildrenComponent,
+        ChangeSubpropertyComponent,
+        ObjectInputComponent,
+        ObjectInputPushComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

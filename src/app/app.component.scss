@@ -7,15 +7,21 @@
     align-items: center;
 
     .routes {
+        display: flex;
         margin-left: 1rem;
 
         .route {
+            padding: 0.5rem 1rem;
+            background-color: lightgray;
+            cursor: pointer;
+
             &:not(:last-child) {
                 margin-right: 1rem;
             }
 
             &.active {
-                color: "red";
+                background-color: dodgerblue;
+                color: white;
             }
         }
     }

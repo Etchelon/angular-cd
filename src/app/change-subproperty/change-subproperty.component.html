@@ -1,0 +1,7 @@
+<p>This component has children which take an object in input.
+    The first on has default CD and always updates, the other one has CD OnPush and won't update if only the subproperty changes</p>
+<events-log class="child" [logs]="logs"></events-log>
+<object-input class="child" [obj]="obj"></object-input>
+<object-input-push class="child" [obj]="obj"></object-input-push>
+<button type="button" (click)="changeSubproperty()">Click me to increment the object's subproperty</button>
+<button type="button" (click)="changeObject()">Click me to update the whole object's reference</button>
