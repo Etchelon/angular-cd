@@ -16,6 +16,11 @@ import { OnPushBlocksChildrenComponent } from './on-push-blocks-children/on-push
 import { ChangeSubpropertyComponent } from './change-subproperty/change-subproperty.component';
 import { ObjectInputComponent } from './change-subproperty/object-input/object-input.component';
 import { ObjectInputPushComponent } from './change-subproperty/object-input-push/object-input-push.component';
+import { ErrorNoChangesComponent } from './error-no-changes/error-no-changes.component';
+import { ChildWithEmitterComponent } from './error-no-changes/child-with-emitter/child-with-emitter.component';
+import { ChildWithBindingComponent } from './error-no-changes/child-with-binding/child-with-binding.component';
+import { ChildWithNoBindingComponent } from './error-no-changes/child-with-no-binding/child-with-no-binding.component';
+import { ChildWithInjectedParentComponent } from './error-no-changes/child-with-injected-parent/child-with-injected-parent.component';
 
 @NgModule({
     imports: [BrowserModule, HttpClientModule, AppRoutingModule],
@@ -34,6 +39,11 @@ import { ObjectInputPushComponent } from './change-subproperty/object-input-push
         ChangeSubpropertyComponent,
         ObjectInputComponent,
         ObjectInputPushComponent,
+        ErrorNoChangesComponent,
+        ChildWithEmitterComponent,
+        ChildWithBindingComponent,
+        ChildWithNoBindingComponent,
+        ChildWithInjectedParentComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

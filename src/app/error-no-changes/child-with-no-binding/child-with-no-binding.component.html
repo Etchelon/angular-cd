@@ -1,0 +1,4 @@
+<p>This component will NOT throw error because value is not bound to the DOM and even though such value is changed
+    in after view init, it was not used to update the DOM - see the logs</p>
+<events-log [logs]="logs"></events-log>
+<button type="button" (click)="noop()">Click me to update the logs</button>

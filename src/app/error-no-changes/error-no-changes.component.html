@@ -1,0 +1,20 @@
+<p>{{ message }}</p>
+<events-log [logs]="logs"></events-log>
+<br>
+<div class="child-selectors">
+    <span>Select component to show:</span>
+    <div class="child-selector" [class.selected]="componentToShow === 1" (click)="componentToShow = 1">Child with binding</div>
+    <div class="child-selector" [class.selected]="componentToShow === 2" (click)="componentToShow = 2">Child without binding</div>
+    <div class="child-selector" [class.selected]="componentToShow === 3" (click)="componentToShow = 3">Child with injected parent</div>
+    <div class="child-selector" [class.selected]="componentToShow === 4" (click)="componentToShow = 4">Child with event emitter (onInit)</div>
+    <div class="child-selector" [class.selected]="componentToShow === 5" (click)="componentToShow = 5">Child with event emitter (afterViewInit)</div>
+</div>
+<child-with-binding *ngIf="componentToShow === 1" class="child"></child-with-binding>
+<child-with-no-binding *ngIf="componentToShow === 2" class="child"></child-with-no-binding>
+<child-with-injected-parent *ngIf="componentToShow === 3" class="child"></child-with-injected-parent>
+<child-with-emitter *ngIf="componentToShow === 4" class="child"
+    [emitOn]="'init'" (messageChanged)="onMessageChanged($event)">
+</child-with-emitter>
+<child-with-emitter *ngIf="componentToShow === 5" class="child"
+    [emitOn]="'viewInit'" (messageChanged)="onMessageChanged($event)">
+</child-with-emitter>

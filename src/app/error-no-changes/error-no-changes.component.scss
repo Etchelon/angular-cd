@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+@import "../tests.component";
+
+.child-selectors {
+    display: flex;
+    align-items: center;
+
+    .child-selector {
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #efefef;
+        cursor: pointer;
+
+        &.selected {
+            background-color: dodgerblue;
+            color: white;
+        }
+    }
+}

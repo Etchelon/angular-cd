@@ -1,0 +1,4 @@
+<p>This component emits an event which causes the parent to update its message.</p>
+<p *ngIf="emitOn === 'init'">The event is emitted in the ngOnInit hook so there won't be an error</p>
+<p *ngIf="emitOn === 'viewInit'">The event is emitted in the ngAfterViewInit hook so there will be an error</p>
+<events-log [logs]="logs"></events-log>
